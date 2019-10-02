@@ -80,8 +80,12 @@ public class Main
     printAnimals(animals, a -> a.breathe() == "breathes with lungs");
 
     // List only those animals that breath with lungs and were named in 1758
+    System.out.println("\nAnimals that breathe with lungs and were named in 1758: \n");
+    printAnimals(animals, a -> (a.breathe() == "breathes with lungs" && a.getYearDiscovered() == 1758));
 
     // List only those animals that lay eggs and breath with lungs
+    System.out.println("\nAnimals that lay eggs and breathe with lungs: \n");
+    printAnimals(animals, a -> (a.reproduce() == "lays eggs" && a.breathe() == "breathes with lungs"));
 
     // List alphabetically only those animals that were named in 1758
 
