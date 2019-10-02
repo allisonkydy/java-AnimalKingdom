@@ -71,8 +71,6 @@ public class Main
     animals.add(catfish);
     animals.add(perch);
 
-    // animals.forEach(a -> System.out.println(a.toString()));
-
     // lambda expresssions:
 
     // List all the animals in descending order by year named
