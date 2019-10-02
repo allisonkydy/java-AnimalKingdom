@@ -4,6 +4,21 @@ import java.util.ArrayList;
 
 public class Main
 {
+  public static ArrayList<Animal> filteredAnimals = new ArrayList<Animal>();
+
+  public static void filterAnimals(ArrayList<Animal> animals, CheckAnimal tester)
+  {
+    filteredAnimals.clear();
+    
+    for (Animal a : animals)
+    {
+      if (tester.test(a))
+      {
+        filteredAnimals.add(a);
+      }
+    }
+  }
+
   public static void printAnimals(ArrayList<Animal> animals, CheckAnimal tester)
   {
     for (Animal a : animals)
@@ -90,6 +105,9 @@ public class Main
     // List alphabetically only those animals that were named in 1758
     System.out.println("\nAnimals that were named in 1758: \n");
     printAnimals(animals, a -> a.getYearDiscovered() == 1758);
+
+    // stretch:
+    // For the list of animals, list alphabetically those animals that are mammals.
 
   }
 }
