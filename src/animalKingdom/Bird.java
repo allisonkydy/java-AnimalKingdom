@@ -12,18 +12,18 @@ public class Bird extends Animal
   @Override
   public String move()
   {
-    return (name + " flies");
+    return "flies";
   }
 
   @Override
   public String breathe()
   {
-    return (name + " breathes with lungs");
+    return "breathes with lungs";
   }
 
   @Override
   public String reproduce()
   {
-    return (name + " lays eggs");
+    return "lays eggs";
   }
 }

@@ -12,18 +12,18 @@ public class Fish extends Animal
   @Override
   public String move()
   {
-    return (name + " swims");
+    return "swims";
   }
 
   @Override
   public String breathe()
   {
-    return (name + " breathes with gills");
+    return "breathes with gills";
   }
 
   @Override
   public String reproduce()
   {
-    return (name + " lays eggs");
+    return "lays eggs";
   }
 }

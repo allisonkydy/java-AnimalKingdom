@@ -12,18 +12,18 @@ public class Mammal extends Animal
   @Override
   public String move()
   {
-    return (name + " walks");
+    return "walks";
   }
 
   @Override
   public String breathe()
   {
-    return (name + " breathes with lungs");
+    return "breathes with lungs";
   }
 
   @Override
   public String reproduce()
   {
-    return (name + " gives birth to live young");
+    return "gives birth to live young";
   }
 }
