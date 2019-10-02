@@ -4,13 +4,16 @@ import java.util.ArrayList;
 
 public class Main
 {
-  // public static void printAnimals(ArrayList<Animal> animals, CheckAnimal tester))
-  // {
-  //   for (Animal a : animals)
-  //   {
-  //     if (tester.test(a))
-  //   }
-  // }
+  public static void printAnimals(ArrayList<Animal> animals, CheckAnimal tester)
+  {
+    for (Animal a : animals)
+    {
+      if (tester.test(a))
+      {
+        System.out.println(a.toString());
+      }
+    }
+  }
 
   public static void main(String[] args)
   {
@@ -73,6 +76,8 @@ public class Main
     animals.forEach(a -> System.out.println(a.getName() + " " + a.move()));
 
     // List only those animals the breath with lungs
+    System.out.println("\nAnimals that breathe with lungs: \n");
+    printAnimals(animals, a -> a.breathe() == "breathes with lungs");
 
     // List only those animals that breath with lungs and were named in 1758
 
