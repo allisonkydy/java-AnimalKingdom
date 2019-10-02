@@ -1,5 +1,7 @@
 package animalKingdom;
 
+import java.util.ArrayList;
+
 public class Main
 {
   public static void main(String[] args)
@@ -25,7 +27,24 @@ public class Main
     Fish catfish = new Fish("Catfish", 1817);
     Fish perch = new Fish("Perch", 1758);
 
-    // System.out.println(panda.getName());
-    // System.out.println(panda.getYearDiscovered());
+    // create arraylist of type Animal and add all the animals
+    ArrayList<Animal> animals = new ArrayList<Animal>();
+    animals.add(panda);
+    animals.add(zebra);
+    animals.add(koala);
+    animals.add(sloth);
+    animals.add(armadillo);
+    animals.add(raccoon);
+    animals.add(bigfoot);
+    animals.add(pigeon);
+    animals.add(peacock);
+    animals.add(toucan);
+    animals.add(parrot);
+    animals.add(swan);
+    animals.add(salmon);
+    animals.add(catfish);
+    animals.add(perch);
+
+    
   }
 }
