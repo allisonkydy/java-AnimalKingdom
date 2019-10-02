@@ -68,6 +68,9 @@ public class Main
     animals.forEach(a -> System.out.println(a.toString()));
 
     // List all the animals order by how they move
+    System.out.println("\nAnimals sorted by movement type: \n");
+    animals.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
+    animals.forEach(a -> System.out.println(a.getName() + " " + a.move()));
 
     // List only those animals the breath with lungs
 
