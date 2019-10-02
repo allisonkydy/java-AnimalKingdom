@@ -58,12 +58,14 @@ public class Main
     // lambda expresssions:
 
     // List all the animals in descending order by year named
+    System.out.println("\nAnimals sorted by year: \n");
     animals.sort((a1, a2) -> a2.getYearDiscovered() - a1.getYearDiscovered());
     animals.forEach(a -> System.out.println(a.toString()));
 
-    System.out.println();
-
     // List all the animals alphabetically
+    System.out.println("\nAnimals sorted alphabetically: \n");
+    animals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+    animals.forEach(a -> System.out.println(a.toString()));
 
     // List all the animals order by how they move
 
