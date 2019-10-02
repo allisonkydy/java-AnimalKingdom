@@ -45,6 +45,6 @@ public class Main
     animals.add(catfish);
     animals.add(perch);
 
-    
+    // animals.forEach(a -> System.out.println(a.toString()));
   }
 }
