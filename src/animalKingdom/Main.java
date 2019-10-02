@@ -9,7 +9,7 @@ public class Main
   public static void filterAnimals(ArrayList<Animal> animals, CheckAnimal tester)
   {
     filteredAnimals.clear();
-    
+
     for (Animal a : animals)
     {
       if (tester.test(a))
@@ -108,6 +108,9 @@ public class Main
 
     // stretch:
     // For the list of animals, list alphabetically those animals that are mammals.
-
+    System.out.println("\nMammals sorted alphabetically: \n");
+    filterAnimals(animals, a -> a instanceof Mammal);
+    filteredAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+    filteredAnimals.forEach(a -> System.out.println(a.toString()));
   }
 }
