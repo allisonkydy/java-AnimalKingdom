@@ -4,6 +4,14 @@ import java.util.ArrayList;
 
 public class Main
 {
+  // public static void printAnimals(ArrayList<Animal> animals, CheckAnimal tester))
+  // {
+  //   for (Animal a : animals)
+  //   {
+  //     if (tester.test(a))
+  //   }
+  // }
+
   public static void main(String[] args)
   {
     // create mammals
@@ -46,5 +54,26 @@ public class Main
     animals.add(perch);
 
     // animals.forEach(a -> System.out.println(a.toString()));
+
+    // lambda expresssions:
+
+    // List all the animals in descending order by year named
+    animals.sort((a1, a2) -> a2.getYearDiscovered() - a1.getYearDiscovered());
+    animals.forEach(a -> System.out.println(a.toString()));
+
+    System.out.println();
+
+    // List all the animals alphabetically
+
+    // List all the animals order by how they move
+
+    // List only those animals the breath with lungs
+
+    // List only those animals that breath with lungs and were named in 1758
+
+    // List only those animals that lay eggs and breath with lungs
+
+    // List alphabetically only those animals that were named in 1758
+
   }
 }
