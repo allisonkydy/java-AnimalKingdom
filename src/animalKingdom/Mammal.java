@@ -26,4 +26,13 @@ public class Mammal extends Animal
   {
     return "gives birth to live young";
   }
+
+  @Override
+  public String toString()
+  {
+    return "Mammal{" +
+           "name='" + name + '\'' +
+           ", yearDiscovered=" + yearDiscovered +
+           '}';
+  }
 }

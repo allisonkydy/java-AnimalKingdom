@@ -49,15 +49,6 @@ public abstract class Animal
     this.yearDiscovered = yearDiscovered;
   }
 
-  @Override
-  public String toString()
-  {
-    return "Animal{" +
-           "name='" + name + '\'' +
-           ", yearDiscovered=" + yearDiscovered +
-           '}';
-  }
-
   // abstract methods - implemented in children
   public abstract String move();
   public abstract String breathe();
